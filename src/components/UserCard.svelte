@@ -7,10 +7,10 @@
     longName = true;
   }
   
-  //If we have a error with the image link, we will use the error image
 </script>
 
 <div class="card" transition:fade>
+  <!-- If we have a error with the image link, we will use the error image --> 
   <img src={ image } alt={ id } onerror="this.src='https://plantillasdememes.com/img/plantillas/imagen-no-disponible01601774755.jpg'" />
   <h3 class:long={ longName } >{ name }</h3>
   <p>{ email }</p>

@@ -11,7 +11,7 @@
 </script>
 
 <div>
-  <button disabled={isUpdating} on:click={ handleClick }
+  <button disabled={ isUpdating } on:click={ handleClick }
     >{isUpdating ? "Updating..." : "Update"}</button
   >
 </div>

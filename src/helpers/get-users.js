@@ -15,10 +15,10 @@ export const getUsers = async () => {
       const { name, email, image } = doc.data();
       return {
         id: doc.id,
-        /* if the name is very long we cut it and we only bring 30 characters plus "..."
+        /* if the name is very long we cut it and we only bring 17 characters plus "..."
         Example Rhoshandiatellyneshiaunneveshenk Koyaanisquatsiuth Williams
-         ="Rhoshandiatellyneshi..." */
-        name: name.length > 40 ? name.slice(0, 20) + "..." : name,
+         ="Rhoshandiatellyne..." */
+        name: name.length > 40 ? name.slice(0, 17) + "..." : name,
         email,
         image,
       };

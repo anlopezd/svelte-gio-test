@@ -1,5 +1,3 @@
-
-
 <header>
     <img src="https://getitout.io/wp-content/uploads/2020/04/GET-it-OUT.svg" alt="get it out Logo">
 </header>

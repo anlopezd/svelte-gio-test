@@ -1,26 +1,23 @@
 <script>
-    export let value = ""
-    export let error = ""
-    export let placeholder = ""
+  export let value = "";
+  export let error = "";
+  export let placeholder = "";
 </script>
 
 <div>
-    {#if error}
-        <p class="error-message">{ error }</p>
-    {/if}
-    
-    <input type="text"  class:error={ error } bind:value placeholder={ placeholder } />
+  {#if error}
+    <p class="error-message">{error}</p>
+  {/if}
+  <input type="text" class:error bind:value { placeholder } />
 </div>
-      
-
 
 <style>
-    div{
-        position: relative;
-        width: 65%;
-        margin: 0 auto;
-    }
-    input {
+  div {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+  }
+  input {
     width: 100%;
     height: 51px;
     background-color: black;

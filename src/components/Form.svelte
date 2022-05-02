@@ -1,8 +1,8 @@
 <script>
+  import validator from "validator";
   import { addDoc, collection } from "firebase/firestore";
-  import Input from "./Input.svelte"
+  import Input from "./Input.svelte";
   import { db } from "../firebase-config";
-  import validator from "validator"
 
   let name = "";
   let email = "";
@@ -30,8 +30,8 @@
       } else {
         errors.email = "";
       }
-    
-      if(!validator.isEmail(email)){
+
+      if (!validator.isEmail(email)) {
         errors.email = "Email is not valid";
         hasError = true;
       } else {
@@ -74,15 +74,13 @@
 <form on:submit|preventDefault={ handleSubmit }>
   <h1>Enter the data to the register</h1>
   <div class="inputs-container">
-
-    <Input bind:value={ name } error={ errors.name } placeholder="User Name" /> 
+    <Input bind:value={ name } error={ errors.name } placeholder="User Name" />
 
     <Input bind:value={ email } error={ errors.email } placeholder="Email" />
 
     <Input bind:value={ image } error={ errors.image } placeholder="Image Link" />
-
   </div>
-  <button type="submit" disabled={ sending }>
+  <button type="submit" disabled={sending}>
     {sending ? "Sending..." : "Send"}</button
   >
 </form>
@@ -98,7 +96,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     form {
       min-height: 100vh;
     }
@@ -122,7 +120,7 @@
     width: 100%;
   }
 
-   button {
+  button {
     width: 194px;
     height: 51px;
     text-transform: uppercase;

@@ -12,7 +12,7 @@
   we can use the store.
   in this application probably it is not necessary, but I chose to do it this way.
 
-  the $ allows us work with reactivity!
+  the $ allows us work with reactivity! and with the store is a autosubscribe.
 
   Users first is an empty array. With the onMount we can get the data from firebase after 
   the component is first rendered to the DOM, and fill the array.

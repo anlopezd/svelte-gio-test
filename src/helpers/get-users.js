@@ -1,6 +1,6 @@
 import { getDocs, collection, orderBy, limit, query } from "firebase/firestore";
 import { users } from "../stores/users";
-import { db } from "../firebaseConfig";
+import { db } from "../firebase-config";
 
 export const getUsers = async () => {
   try {

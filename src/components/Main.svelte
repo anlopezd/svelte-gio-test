@@ -4,7 +4,7 @@
   import UserList from "./UserList.svelte";
   import Update from "./Update.svelte";
   import {  onMount } from "svelte";
-  import { getUsers } from "../helpers/getUser.js";
+  import { getUsers } from "../helpers/get-users.js";
  
   /*
   We can pass the users data like props, 

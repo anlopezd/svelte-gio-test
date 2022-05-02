@@ -1,7 +1,7 @@
 <script>
   import { addDoc, collection } from "firebase/firestore";
   import Input from "./Input.svelte"
-  import { db } from "../firebaseConfig";
+  import { db } from "../firebase-config";
   import validator from "validator"
 
   let name = "";

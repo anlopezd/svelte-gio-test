@@ -1,5 +1,5 @@
 <script>
-  import { getUsers } from "../helpers/getUser.js";
+  import { getUsers } from "../helpers/get-users.js";
 
   let isUpdating = false;
 

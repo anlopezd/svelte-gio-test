@@ -25,14 +25,14 @@
       }
 
       if (email.trim().length < 5) {
-        errors.email = "Email must be at least 5 characters";
+        errors.email = "Email must be at least 5 characters, ";
         hasError = true;
       } else {
         errors.email = "";
       }
 
       if (!validator.isEmail(email)) {
-        errors.email = "Email is not valid";
+        errors.email += "Email is not valid";
         hasError = true;
       } else {
         errors.email = "";
